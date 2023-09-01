@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bono</title>
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <script defer src="main.js"></script>
+
+</head>
+
+<body>
+  <header class="container">
+    <div class="header-container flex">
+
+      <a href="#" class="header-logo"><img src="img/logo.svg" class="logo" alt="логотип tyny"></a><svg class="grey-line"
+        width="1" height="42" viewBox="0 0 1 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1" height="42" fill="#C4C4C4" />
+      </svg>
+      <nav class="container__nav flex">
+        <ul class="header-nav flex">
+          <li class="nav__item"><a href="#" class="nav__link header-link">Конференция</a></li>
+          <li class="nav__item"><a href="#" class="nav__link header-link">Программа</a></li>
+          <li class="nav__item"><a href="#" class="nav__link header-link">Спикеры</a></li>
+          <li class="nav__item"><a href="#" class="nav__link header-link">Фото</a></li>
+          <li class="nav__item"><a href="#" class="nav__link header-link">Материалы</a></li>
+        </ul>
+        <button aria-label="Регистрация" class="button button-registration" >Регистрация</button>
+      </nav>
+
+      <div class="block-icon flex">
+        <button class="mail-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="20" viewBox="0 0 29 20" fill="none">
+            <rect x="1.81818" y="1.09082" width="24.5455" height="18.8182" rx="3" fill="#0A2756" />
+            <path
+              d="M1 1.97194L12.9508 12.1048C12.9508 12.1048 13.3934 12.5454 13.8361 12.5454C14.2787 12.5454 14.7213 12.1048 14.7213 12.1048L28 1.09082"
+              stroke="white" stroke-width="2" />
+          </svg>
+        </button>
+        <button class="fb-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <path
+              d="M19.4989 0.00540974L16.1273 0C12.3395 0 9.89158 2.51147 9.89158 6.39863V9.34883H6.50161C6.20867 9.34883 5.97146 9.58632 5.97146 9.87926V14.1538C5.97146 14.4467 6.20895 14.6839 6.50161 14.6839H9.89158V25.4698C9.89158 25.7628 10.1288 26 10.4217 26H14.8447C15.1376 26 15.3748 25.7625 15.3748 25.4698V14.6839H19.3385C19.6314 14.6839 19.8687 14.4467 19.8687 14.1538L19.8703 9.87926C19.8703 9.73861 19.8143 9.6039 19.715 9.50436C19.6158 9.40483 19.4805 9.34883 19.3399 9.34883H15.3748V6.84791C15.3748 5.64587 15.6613 5.03565 17.2271 5.03565L19.4984 5.03484C19.791 5.03484 20.0282 4.79735 20.0282 4.50469V0.535564C20.0282 0.243168 19.7913 0.00595071 19.4989 0.00540974Z"
+              fill="#0A2756" />
+          </svg>
+        </button>
+
+      </div>
+      <button class="nav__burger-menu-button" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="21" viewBox="0 0 25 21" fill="none">
+          <rect width="25" height="2" transform="matrix(1 0 0 -1 0 21)" fill="#0A2756" />
+          <rect width="25" height="2" transform="matrix(1 0 0 -1 0 2)" fill="#0A2756" />
+          <rect width="25" height="2" transform="matrix(1 0 0 -1 0 11)" fill="#0A2756" />
+        </svg>
+      </button>
+      <div class="nav__burger-menu">
+        <button class="nav__button-burger">
+          <svg class="button-burger__close" width="23" height="23" viewBox="0 0 23 23" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.09082" width="29.5699" height="2.95699" transform="rotate(45 2.09082 0)" fill="#0A2756" />
+            <rect y="20.9092" width="29.5699" height="2.95699" transform="rotate(-45 0 20.9092)" fill="#0A2756" />
+          </svg>
+        </button>
+        <a href="#" class="header-logo"><img src="img/logo.svg" class="logo" alt="логотип tyny"></a>
+        <ul class="nav__burger-menu-list" tabindex="-1">
+          <li class="nav__burger-menu-item" tabindex="-1"><a href="#" class="nav__burger-menu-link"
+              tabindex="-1">Конференция</a></li>
+          <li class="nav__burger-menu-item" tabindex="-1"><a href="#" class="nav__burger-menu-link"
+              tabindex="-1">Программа
+            </a></li>
+          <li class="nav__burger-menu-item" tabindex="-1"><a href="#" class="nav__burger-menu-link"
+              tabindex="-1">Спикеры</a></li>
+          <li class="nav__burger-menu-item" tabindex="-1"><a href="#" class="nav__burger-menu-link"
+              tabindex="-1">Фото</a></li>
+          <li class="nav__burger-menu-item" tabindex="-1"><a href="#" class="nav__burger-menu-link"
+              tabindex="-1">Материалы</a></li>
+          <li class="nav__burger-menu-item" tabindex="-1"> <button aria-label="Регистрация"
+              class="button button-registration__burger" >Регистрация</button></li>
+        </ul>
+
+        <div class="block-icon__burger">
+          <button class="mail-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="30" viewBox="0 0 42 30" fill="none">
+              <rect x="2.16541" y="1.92731" width="35.5659" height="27.2672" rx="4.34694" fill="#0A2756"/>
+              <path d="M0.979492 3.20421L18.296 17.8865C18.296 17.8865 18.9373 18.5249 19.5787 18.5249C20.22 18.5249 20.8614 17.8865 20.8614 17.8865L40.1019 1.92749" stroke="white" stroke-width="3"/>
+            </svg>
+          </button>
+          <button class="fb-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="38" viewBox="0 0 39 38" fill="none">
+              <g clip-path="url(#clip0_4_3638)">
+                <path d="M29.1927 0.00762497L24.3073 -0.000213623C18.8188 -0.000213623 15.2719 3.63885 15.2719 9.27128V13.5461H10.3598C9.93539 13.5461 9.59167 13.8902 9.59167 14.3146V20.5083C9.59167 20.9328 9.93579 21.2765 10.3598 21.2765H15.2719V36.9051C15.2719 37.3295 15.6156 37.6733 16.04 37.6733H22.4488C22.8733 37.6733 23.217 37.3291 23.217 36.9051V21.2765H28.9603C29.3847 21.2765 29.7284 20.9328 29.7284 20.5083L29.7308 14.3146C29.7308 14.1108 29.6497 13.9156 29.5058 13.7714C29.362 13.6272 29.166 13.5461 28.9622 13.5461H23.217V9.92227C23.217 8.18054 23.632 7.29634 25.9009 7.29634L29.1919 7.29517C29.6159 7.29517 29.9597 6.95105 29.9597 6.52699V0.775807C29.9597 0.352131 29.6163 0.00840883 29.1927 0.00762497Z" fill="#0A2756"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_4_3638">
+                  <rect width="37.6735" height="37.6735" fill="white" transform="translate(0.938965)"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+
+    <section class="hero">
+      <div class="hero-container container">
+        <div class="hero-container__affiche flex">
+          <div class="hero-container__left flex">
+            <img src="img/affiche.png" class="img-affiche" alt="affiche">
+            <button class="button__affiche">зарегистрироваться</button>
+          </div>
+          <div class="hero-container__right">
+            <img src="img/img-right.png" alt="img-right">
+          </div>
+
+        </div>
+        <div class="container hero-container__descr">
+          <h1 class="title hero-container__descr-title">Команда рекламного холдинга GroupM рада
+            открыть для вас двери digital-конференции NextM!</h1>
+          <p class="title hero-container__descr-subtitle">NextM&nbsp;&mdash; это ежегодная digital-конференция,
+            организованная ведущей международной рекламной группой GroupM, входящей в&nbsp;состав коммуникационного
+            холдинга
+            WPP и&nbsp;представленной в&nbsp;России агентствами Mindshare, MediaCom и&nbsp;Wavemaker.</p>
+        </div>
+        <div class="hero-container__button-hide">
+
+          <img src="img/Vector-aff.png" alt="Vector-aff">
+        </div>
+      </div>
+    </section>
+    <section class="speakers">
+      <div class="speakers-container container">
+        <h2 class="title-h2">Спикеры
+        </h2>
+        <div class="slider-content">
+
+          <div class="slider-box">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-container">
+              <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide flex">
+                    <div class="swiper-slide__descr-block">
+                      <p class="swiper-slide__descr-name">Ярон Фаризон</p>
+                      <p class="swiper-slide__descr-office">CEO MediaCom</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide flex">
+                    <div class="swiper-slide__descr-block">
+                      <p class="swiper-slide__descr-name">Ярон Фаризон</p>
+                      <p class="swiper-slide__descr-office">CEO MediaCom</p>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide flex">
+                    <div class="swiper-slide__descr-block">
+                      <p class="swiper-slide__descr-name">Ярон Фаризон</p>
+                      <p class="swiper-slide__descr-office">CEO MediaCom</p>
+                    </div>
+                  </div>
+
+
+                  <div class="swiper-slide flex">
+                    <div class="swiper-slide__descr-block">
+                      <p class="swiper-slide__descr-name">Ярон Фаризон</p>
+                      <p class="swiper-slide__descr-office">CEO MediaCom</p>
+                    </div>
+                  </div>
+
+
+                  <div class="swiper-slide flex">
+                    <div class="swiper-slide__descr-block">
+                      <p class="swiper-slide__descr-name">Ярон Фаризон</p>
+                      <p class="swiper-slide__descr-office">CEO MediaCom</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide flex">
+                    <div class="swiper-slide__descr-block">
+                      <p class="swiper-slide__descr-name">Ярон Фаризон</p>
+                      <p class="swiper-slide__descr-office">CEO MediaCom</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide flex">
+                    <div class="swiper-slide__descr-block">
+                      <p class="swiper-slide__descr-name">Ярон Фаризон</p>
+                      <p class="swiper-slide__descr-office">CEO MediaCom</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container container">
+        <h3 class="title-h3">Отправить сообщение</h3>
+        <div class="footer-form__container">
+          <form class="footer-form">
+            <div class="form-container__up flex">
+              <textarea aria-label="Введите" class="input-search" name="name" placeholder="Ваше имя"></textarea>
+              <textarea aria-label="Введите" class="input-email" name="e-mail" placeholder="E-mail*"></textarea>
+            </div>
+            <textarea aria-label="Введите" class="input-text" name="message" placeholder="Ваше сообщение"></textarea>
+          </form>
+        </div>
+        <button class="button-form">Отправить</button>
+        <div class="footer-container__aside flex">
+          <a href="mailto:info@groupmnextm.ru?subject=Вопрос&body=Привет" class="aside-mail">info@groupmnextm.ru</a>
+          <a class="aside-tel" href="tel:+74956414080">+7 (495) 641-40-80</a>
+          <a class="aside-terms" href="#" target="blank">Правовая информация</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>
